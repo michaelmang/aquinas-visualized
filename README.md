@@ -1,8 +1,8 @@
-# Aquinas's Model of Human Intelligence - Visual Guide
+# Aquinas Visualized
 
 <img width="751" height="1024" alt="image" src="https://github.com/user-attachments/assets/29dac27e-ef74-4f0b-82db-1278c1f45a29" />
 
-A collection of diagrams visualizing Thomas Aquinas's philosophical anthropology (ST I.75-85), with applications to understanding AI capabilities and limitations.
+A collection of diagrams visualizing Thomas Aquinas's philosophical anthropology (ST I.75-85), and other microsystems.
 
 ## Charts
 
