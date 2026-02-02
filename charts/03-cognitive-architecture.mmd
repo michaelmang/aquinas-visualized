@@ -1,0 +1,54 @@
+flowchart TB
+ subgraph Beyond["BEYOND THE STELLATUM<br>(Non-Spatial / Immaterial)"]
+        AI["Agent Intellect<br>Illuminates phantasms"]
+        PI["Passive Intellect<br>Receives universals"]
+        W["Will<br>Rational appetite"]
+  end
+ subgraph IS["Internal Senses"]
+        CS["Common Sense<br>Integrates modalities"]
+        IM["Imagination<br>Stores phantasms"]
+        ES["Estimative/Cogitative<br>Perceives intentions"]
+        ME["Memory<br>Stores with context"]
+  end
+ subgraph EX["External Senses"]
+        S["Sight"]
+        H["Hearing"]
+        T["Touch"]
+        Ta["Taste"]
+        Sm["Smell"]
+  end
+ subgraph Below["BELOW THE STELLATUM<br>(Spatial / Material)"]
+        IS
+        EX
+  end
+ subgraph Reality["REALITY"]
+        R["Material Objects"]
+  end
+    R --> S & H & T & Ta & Sm
+    S --> CS
+    H --> CS
+    T --> CS
+    Ta --> CS
+    Sm --> CS
+    CS --> IM
+    IM --> ES & ME
+    IM -. Phantasm .-> AI
+    AI -. Universal Form .-> PI
+    PI --> W
+
+     AI:::immaterial
+     PI:::immaterial
+     W:::immaterial
+     CS:::material
+     IM:::material
+     ES:::material
+     ME:::material
+     S:::material
+     H:::material
+     T:::material
+     Ta:::material
+     Sm:::material
+     R:::material
+    classDef immaterial fill:#e1f5ff,stroke:#0066cc,stroke-width:2px
+    classDef material fill:#fff4e6,stroke:#ff9900,stroke-width:2px
+    classDef boundary fill:#f0f0f0,stroke:#666,stroke-width:3px,stroke-dasharray: 5 5
