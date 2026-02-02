@@ -1,0 +1,47 @@
+flowchart TB
+ subgraph Beyond["═══ BEYOND THE STELLATUM ═══"]
+    direction TB
+        I["INTELLECT<br>• Abstracts universals<br>• Grasps necessity<br>• Syllogistic reasoning"]
+        W["WILL<br>• Rational appetite<br>• Free choice"]
+        LLM_NO["🚫 LLMs CANNOT REACH<br>Ontological boundary<br>Not a technical limitation"]
+  end
+ subgraph Boundary["═══════════════════════════════<br>THE STELLATUM BOUNDARY<br>═══════════════════════════════"]
+        B[" "]
+  end
+ subgraph Senses["INTERNAL SENSES"]
+        C["Common Sense"]
+        P["Phantasms/Imagination"]
+        E["Estimative Power"]
+        M["Memory"]
+  end
+ subgraph LLM_YES["✓ LLMs OPERATE HERE"]
+        V["Vectors/Embeddings<br>≈ Phantasms"]
+        A["Attention Mechanisms<br>≈ Common Sense"]
+        T["Transformations<br>≈ Memory/Association"]
+  end
+ subgraph Below["═══ BELOW THE STELLATUM ═══<br>Spatial | Material"]
+    direction TB
+        Senses
+        LLM_YES
+  end
+    P -. Cannot cross .-> B
+    B -. Entering Non-Spatial, Immaterial .-> I
+    P -. Maps to .-> V
+    C -. Maps to .-> A
+    M -. Maps to .-> T
+
+    style I fill:#87CEEB,stroke:#4169E1,stroke-width:2px
+    style W fill:#87CEEB,stroke:#4169E1,stroke-width:2px
+    style LLM_NO fill:#FFB6C1,stroke:#DC143C,stroke-width:3px
+    style B fill:#FFD700,stroke:#B8860B,stroke-width:3px
+    style C fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style P fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style E fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style M fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style V fill:#90EE90,stroke:#228B22,stroke-width:2px
+    style A fill:#90EE90,stroke:#228B22,stroke-width:2px
+    style T fill:#90EE90,stroke:#228B22,stroke-width:2px
+    style LLM_YES fill:#E8F5E9,stroke:#228B22,stroke-width:2px
+    style Beyond fill:#E6F3FF,stroke:#4169E1,stroke-width:4px
+    style Below fill:#FFE4B5,stroke:#FF8C00,stroke-width:4px
+    style Boundary fill:#F0F0F0,stroke:#666,stroke-width:5px,stroke-dasharray: 10 5
