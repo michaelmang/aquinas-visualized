@@ -1,0 +1,20 @@
+{
+  "name": "aquinas-visualized",
+  "version": "1.0.0",
+  "description": "<img width=\"751\" height=\"1024\" alt=\"image\" src=\"https://github.com/user-attachments/assets/29dac27e-ef74-4f0b-82db-1278c1f45a29\" />",
+  "homepage": "https://github.com/michaelmang/aquinas-visualized#readme",
+  "bugs": {
+    "url": "https://github.com/michaelmang/aquinas-visualized/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelmang/aquinas-visualized.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
