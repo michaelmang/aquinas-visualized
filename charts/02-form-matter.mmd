@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph Statue["THE MARBLE STATUE"]
+        F1["FORM<br/>Statue-shape<br/>───────<br/>Cannot exist<br/>without matter"]
+        M1["MATTER<br/>Marble<br/>───────<br/>Can exist<br/>without this form"]
+        C1["COMPOSITE<br/>Marble Statue<br/>───────<br/>Form + Matter<br/>= Actual Thing"]
+        
+        F1 & M1 --> C1
+    end
+    
+    subgraph Human["THE HUMAN PERSON"]
+        F2["FORM<br/>Rational Soul<br/>───────<br/>Subsistent<br/>Can exist apart"]
+        M2["MATTER<br/>Body<br/>───────<br/>Organized by soul<br/>as its form"]
+        C2["COMPOSITE<br/>Human Person<br/>───────<br/>Soul + Body<br/>= Living Person"]
+        
+        F2 & M2 --> C2
+    end
+    
+    Statue -.Analogy.-> Human
+    
+    style F1 fill:#E6F3FF,stroke:#4169E1,stroke-width:2px
+    style M1 fill:#FFE4B5,stroke:#FF8C00,stroke-width:2px
+    style C1 fill:#E8F5E9,stroke:#228B22,stroke-width:3px
+    
+    style F2 fill:#E6F3FF,stroke:#4169E1,stroke-width:2px
+    style M2 fill:#FFE4B5,stroke:#FF8C00,stroke-width:2px
+    style C2 fill:#E8F5E9,stroke:#228B22,stroke-width:3px

@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph Hierarchy["HIERARCHY OF SOULS"]
+        direction TB
+        
+        subgraph Rational["RATIONAL SOUL (Humans)<br/>Subsistent"]
+            R_Int["INTELLECTUAL POWERS<br/>Understanding + Will<br/>───────────<br/>Unique to humans<br/>Immaterial, subsistent"]
+            R_Sen["SENSITIVE POWERS<br/>Senses + Appetite + Locomotion"]
+            R_Veg["VEGETATIVE POWERS<br/>Nutrition + Growth + Reproduction"]
+            
+            R_Int --> R_Sen --> R_Veg
+        end
+        
+        subgraph Sensitive["SENSITIVE SOUL (Animals)<br/>Not Subsistent"]
+            A_Sen["SENSITIVE POWERS<br/>Perception + Appetite + Movement<br/>───────────<br/>Distinguishes animals from plants<br/>Requires bodily organs"]
+            A_Veg["VEGETATIVE POWERS<br/>Nutrition + Growth + Reproduction"]
+            
+            A_Sen --> A_Veg
+        end
+        
+        subgraph Vegetative["VEGETATIVE SOUL (Plants)<br/>Not Subsistent"]
+            P_Veg["VEGETATIVE POWERS<br/>Nutrition + Growth + Reproduction<br/>───────────<br/>Lowest form of life<br/>Self-initiated toward end"]
+        end
+    end
+    
+    subgraph Artifacts["ARTIFACTS (Non-Living)<br/>No Soul"]
+        Art["LLMs + All Made Things<br/>───────────<br/>No intrinsic principle of operation<br/>Acted upon by external design<br/>───────────<br/>LLMs: Simulate internal sense operations<br/>but lack perception and intellect"]
+    end
+    
+    Rational -.Higher than.-> Sensitive
+    Sensitive -.Higher than.-> Vegetative
+    Vegetative -.Living vs Non-Living.-> Artifacts
+    
+    style Rational fill:#E6F3FF,stroke:#4169E1,stroke-width:3px
+    style Sensitive fill:#FFE4B5,stroke:#FF8C00,stroke-width:3px
+    style Vegetative fill:#90EE90,stroke:#228B22,stroke-width:3px
+    style Artifacts fill:#F0F0F0,stroke:#666,stroke-width:3px
+    
+    style R_Int fill:#87CEEB,stroke:#4169E1,stroke-width:2px
+    style A_Sen fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style P_Veg fill:#98FB98,stroke:#228B22,stroke-width:2px
+    style Art fill:#D3D3D3,stroke:#666,stroke-width:2px
