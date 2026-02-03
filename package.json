@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "render": "for file in charts/*.mmd; do filename=$(basename \"$file\" .mmd); npx mmdc -i \"charts/${filename}.mmd\" -o \"artifacts/${filename}.svg\"; done",
+     "render:chart": "npx mmdc -i charts/$CHART.mmd -o artifacts/$CHART.svg"
   }
 }

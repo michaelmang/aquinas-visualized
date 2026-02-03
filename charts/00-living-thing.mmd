@@ -1,0 +1,30 @@
+flowchart TD
+    Start["Does it exist?"]
+    
+    Start --> Q1["Does it exhibit<br/>self-initiated movement<br/>toward intrinsic end?"]
+    
+    Q1 -->|Yes| Living["LIVING<br/>Has a soul<br/>(principle of life)"]
+    Q1 -->|No| NonLiving["NON-LIVING<br/>No soul<br/>(artifact or natural non-living)"]
+    
+    Living --> Q2["What is its<br/>highest power?"]
+    
+    Q2 --> Veg["Only nutrition,<br/>growth, reproduction?<br/>───────<br/>VEGETATIVE SOUL<br/>(Plant)"]
+    
+    Q2 --> Sen["Also perception,<br/>appetite, movement?<br/>───────<br/>SENSITIVE SOUL<br/>(Animal)"]
+    
+    Q2 --> Rat["Also intellect<br/>and will?<br/>───────<br/>RATIONAL SOUL<br/>(Human)"]
+    
+    NonLiving --> Q3["Made by humans?"]
+    
+    Q3 -->|Yes| Art["ARTIFACT<br/>───────<br/>Clock, tool,<br/>LLM"]
+    Q3 -->|No| Nat["NATURAL NON-LIVING<br/>───────<br/>Rock, water,<br/>air"]
+    
+    style Living fill:#90EE90,stroke:#228B22,stroke-width:3px
+    style NonLiving fill:#F0F0F0,stroke:#666,stroke-width:3px
+    
+    style Veg fill:#98FB98,stroke:#228B22,stroke-width:2px
+    style Sen fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style Rat fill:#87CEEB,stroke:#4169E1,stroke-width:2px
+    
+    style Art fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
+    style Nat fill:#D3D3D3,stroke:#666,stroke-width:2px
