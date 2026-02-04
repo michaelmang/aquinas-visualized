@@ -1,54 +1,51 @@
 flowchart TB
- subgraph Beyond["BEYOND THE STELLATUM<br>(Non-Spatial / Immaterial)"]
-        AI["Agent Intellect<br>Illuminates phantasms"]
-        PI["Passive Intellect<br>Receives universals"]
-        W["Will<br>Rational appetite"]
-  end
- subgraph IS["Internal Senses"]
-        CS["Common Sense<br>Integrates modalities"]
-        IM["Imagination<br>Stores phantasms"]
-        ES["Estimative/Cogitative<br>Perceives intentions"]
-        ME["Memory<br>Stores with context"]
-  end
- subgraph EX["External Senses"]
-        S["Sight"]
-        H["Hearing"]
-        T["Touch"]
-        Ta["Taste"]
-        Sm["Smell"]
-  end
- subgraph Below["BELOW THE STELLATUM<br>(Spatial / Material)"]
-        IS
-        EX
-  end
- subgraph Reality["REALITY"]
+    subgraph Reality["REALITY"]
         R["Material Objects"]
-  end
-    R --> S & H & T & Ta & Sm
-    S --> CS
-    H --> CS
-    T --> CS
-    Ta --> CS
-    Sm --> CS
+    end
+    
+    subgraph BelowStellatum["BELOW THE STELLATUM<br/>Material/Spatial Operations"]
+        direction TB
+        
+        subgraph External["External Senses"]
+            ES["Sight | Hearing | Touch<br/>Taste | Smell<br/>────────<br/>Receive forms from objects"]
+        end
+        
+        subgraph Internal["Internal Senses"]
+            direction TB
+            CS["COMMON SENSE<br/>────────<br/>Integrates multiple modalities<br/>Unified perception"]
+            
+            IM["IMAGINATION<br/>────────<br/>Stores phantasms<br/>(sensory images)<br/>────────<br/>Central hub"]
+            
+            EST["ESTIMATIVE/COGITATIVE<br/>────────<br/>Apprehends intentions<br/>(useful/harmful/flee-able)<br/>────────<br/>Perceives practical meanings"]
+            
+            MEM["MEMORY<br/>────────<br/>Preserves intentions<br/>+ temporal context<br/>────────<br/>Stores when/where/significance"]
+        end
+    end
+    
+    subgraph BeyondStellatum["BEYOND THE STELLATUM<br/>Immaterial/Non-Spatial Operations"]
+        direction TB
+        AI["AGENT INTELLECT<br/>────────<br/>Illuminates phantasm<br/>Makes it actually intelligible"]
+        
+        PI["PASSIVE INTELLECT<br/>────────<br/>Receives universal form<br/>Stores concepts"]
+        
+        W["WILL<br/>────────<br/>Rational appetite<br/>Desires good known by intellect"]
+    end
+    
+    R --> ES
+    ES --> CS
     CS --> IM
-    IM --> ES & ME
-    IM -. Phantasm .-> AI
-    AI -. Universal Form .-> PI
+    
+    IM -->|Phantasm| EST
+    EST -->|Intention| MEM
+    
+    IM -.Phantasm.-> AI
+    AI -->|Universal| PI
     PI --> W
+    
+    style Reality fill:#F5F5DC,stroke:#8B7355,stroke-width:3px
+    style BelowStellatum fill:#FFF8DC,stroke:#DEB887,stroke-width:3px
+    style BeyondStellatum fill:#E6F3FF,stroke:#4169E1,stroke-width:3px
+    
+    style ES fill:#FFE4B5,stroke:#D2691E,stroke-width:2px
+    style CS fill:#FFDAB9,stroke:#FF8C0
 
-     AI:::immaterial
-     PI:::immaterial
-     W:::immaterial
-     CS:::material
-     IM:::material
-     ES:::material
-     ME:::material
-     S:::material
-     H:::material
-     T:::material
-     Ta:::material
-     Sm:::material
-     R:::material
-    classDef immaterial fill:#e1f5ff,stroke:#0066cc,stroke-width:2px
-    classDef material fill:#fff4e6,stroke:#ff9900,stroke-width:2px
-    classDef boundary fill:#f0f0f0,stroke:#666,stroke-width:3px,stroke-dasharray: 5 5
