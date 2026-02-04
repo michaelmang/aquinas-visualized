@@ -1,0 +1,53 @@
+flowchart TB
+    subgraph Experience["THE EXPERIENCE: Sheep Encounters Wolf"]
+
+    end
+    
+    subgraph Perception["STEP 1: PERCEPTION"]
+        ES["External Senses<br/>────────<br/>See: gray, four legs, sharp teeth<br/>Hear: growling<br/>Smell: predator scent"]
+        
+        CS["Common Sense<br/>────────<br/>Integrates all modalities<br/>Unified perception: 'one thing'"]
+        
+        ES --> CS
+    end
+    
+    subgraph Storage["STEP 2: IMAGINATION STORES FORM"]
+        IM["Imagination (Phantasia)<br/>────────<br/>Stores phantasm:<br/>'Image of gray four-legged thing'<br/>────────<br/>Atemporal storage<br/>Can picture it anytime<br/>Available for manipulation"]
+        
+        CS --> IM
+    end
+    
+    subgraph Intention["STEP 3: ESTIMATIVE PERCEIVES INTENTION"]
+        EST["Estimative Power<br/>────────<br/>Reads phantasm from imagination<br/>Perceives: 'FLEE-FROM-ABLE'<br/>────────<br/>Not just sensing form<br/>Grasping practical meaning"]
+        
+        IM -.Provides phantasm.-> EST
+    end
+    
+    subgraph Archive["STEP 4: MEMORY STORES CONTEXT"]
+        MEM["Memory (Memorativa)<br/>────────<br/>Stores:<br/>• Intention: 'flee-from-able'<br/>• Temporal: 'YESTERDAY'<br/>• Spatial: 'in THAT meadow'<br/>• References: phantasm in imagination<br/>────────<br/>Recognition: 'This represents<br/>something I actually experienced'"]
+        
+        EST --> MEM
+    end
+    
+    subgraph Later["LATER: SHEEP RECALLS"]
+        Recall["Memory retrieves:<br/>'I encountered flee-from-able thing<br/>YESTERDAY in that meadow'<br/>────────<br/>References phantasm still in imagination<br/>Adds temporal/intentional context"]
+        
+        MEM -.When triggered.-> Recall
+        IM -.Phantasm still available.-> Recall
+    end
+    
+    Experience --> Perception
+    
+    style Experience fill:#F5F5DC,stroke:#8B7355,stroke-width:2px
+    style Perception fill:#FFE4B5,stroke:#D2691E,stroke-width:2px
+    style Storage fill:#FFD700,stroke:#DAA520,stroke-width:3px
+    style Intention fill:#F0E68C,stroke:#BDB76B,stroke-width:2px
+    style Archive fill:#EEE8AA,stroke:#BDB76B,stroke-width:3px
+    style Later fill:#E6F3FF,stroke:#4169E1,stroke-width:2px
+    
+    style ES fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style CS fill:#FFE4B5,stroke:#FF8C00,stroke-width:2px
+    style IM fill:#FFD700,stroke:#DAA520,stroke-width:3px
+    style EST fill:#F0E68C,stroke:#BDB76B,stroke-width:2px
+    style MEM fill:#EEE8AA,stroke:#BDB76B,stroke-width:2px
+    style Recall fill:#B0E0E6,stroke:#4682B4,stroke-width:2px
