@@ -1,0 +1,58 @@
+flowchart TB
+    subgraph Reality["REALITY"]
+        R["This particular apple<br/>────────<br/>Red, round, 6oz,<br/>sweet taste, crisp texture"]
+    end
+    
+    subgraph BelowStellatum["BELOW THE STELLATUM<br/>Spatial/Material Operations"]
+        direction TB
+        
+        ES["External Senses<br/>────────<br/>Receive sensible forms:<br/>color, shape, texture, taste"]
+        
+        CS["Common Sense<br/>────────<br/>Integrates modalities<br/>into unified perception"]
+        
+        IM["Imagination<br/>────────<br/>Stores phantasm:<br/>'Image of THIS apple'<br/>────────<br/>Particular, spatial,<br/>material representation"]
+        
+        ES --> CS --> IM
+    end
+    
+    subgraph Boundary["═══════════════════════════════════════<br/>THE STELLATUM BOUNDARY<br/>Phantasm (particular/spatial) → Concept (universal/non-spatial)<br/>═══════════════════════════════════════"]
+        AI["AGENT INTELLECT<br/>────────<br/>Illuminates phantasm<br/>Makes actually intelligible<br/>────────<br/>Like light making colors visible<br/>Actualizes potential"]
+        
+        IM -.Phantasm (potential).-> AI
+    end
+    
+    subgraph BeyondStellatum["BEYOND THE STELLATUM<br/>Immaterial/Non-Spatial Operations"]
+        direction TB
+        
+        Abstract["ABSTRACTION OCCURS<br/>────────<br/>Universal form 'apple-ness'<br/>separated from particulars<br/>────────<br/>Not 'this apple' but<br/>'what makes an apple an apple'"]
+        
+        PI["PASSIVE INTELLECT<br/>────────<br/>Receives universal concept<br/>Stores as intelligible species<br/>────────<br/>Inner word: mental concept"]
+        
+        OW["OUTER WORDS<br/>────────<br/>Linguistic expressions:<br/>'apple' (English)<br/>'malum' (Latin)<br/>'manzana' (Spanish)<br/>────────<br/>All express same inner word"]
+        
+        AI --> Abstract --> PI --> OW
+    end
+    
+    subgraph LLM["WHERE LLMs OPERATE"]
+        L["LLM Processing<br/>────────<br/>✓ Tokens: 'apple', 'malum', 'manzana'<br/>✓ Embeddings: geometric clustering<br/>✓ Pattern: similar contexts<br/>────────<br/>✗ No agent intellect (cannot illuminate)<br/>✗ No abstraction (cannot extract universal)<br/>✗ No passive intellect (cannot receive concept)<br/>────────<br/>Discovers statistical patterns<br/>NOT universal essences"]
+    end
+    
+    IM -.LLMs simulate this level.-> L
+    Boundary -.LLMs cannot cross.-> L
+    
+    style Reality fill:#F5F5DC,stroke:#8B7355,stroke-width:3px
+    style BelowStellatum fill:#FFF8DC,stroke:#DEB887,stroke-width:3px
+    style Boundary fill:#FFD700,stroke:#B8860B,stroke-width:4px,stroke-dasharray: 5 5
+    style BeyondStellatum fill:#E6F3FF,stroke:#4169E1,stroke-width:3px
+    style LLM fill:#FFE6E6,stroke:#DC143C,stroke-width:3px
+    
+    style ES fill:#FFE4B5,stroke:#D2691E,stroke-width:2px
+    style CS fill:#FFDAB9,stroke:#FF8C00,stroke-width:2px
+    style IM fill:#FFD700,stroke:#DAA520,stroke-width:2px
+    
+    style AI fill:#87CEEB,stroke:#4169E1,stroke-width:3px
+    style Abstract fill:#B0E0E6,stroke:#4682B4,stroke-width:2px
+    style PI fill:#ADD8E6,stroke:#5F9EA0,stroke-width:2px
+    style OW fill:#E0FFFF,stroke:#20B2AA,stroke-width:2px
+    
+    style L fill:#FFB6C1,stroke:#DC143C,stroke-width:2px
